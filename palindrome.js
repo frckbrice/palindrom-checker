@@ -11,7 +11,7 @@ function isPalindrome () {
   let n = Math.trunc(long / 2);
   for (let i = 0; i < n + 1; i++) {
     if (inputText[i] !== inputText[long - 1 - i]) {
-      return `NO!   The word ${inputText} is not a palindrom`;
+      return `NO!   The word "${inputText}" is not a palindrom`;
     } 
   }
  return `YES!   The word "${inputText}" is a palindrom`;;
