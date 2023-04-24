@@ -61,22 +61,24 @@ body {
 }
 
 .display-result {
-   border-radius: 10px;
+  border-radius: 10px;
   font-weight: bold;
   background-image: linear-gradient(to right, var(--pink), var(--purple));
-  -webkit-background-clip: text; 
+  -webkit-background-clip: text;
+
   background-clip: text;
-   -webkit-text-fill-color: transparent; 
-   margin-top: 30%;
+  -webkit-text-fill-color: transparent;
+  
+  margin-top: 30%;
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
   .input-palindrom {
     width: 50vw;
   }
 }
 
-@media screen and (max-width: 425px){
+@media screen and (max-width: 425px) {
   .input-palindrom {
     width: 80vw;
   }
@@ -86,7 +88,7 @@ body {
   }
 }
 
-@media screen and (max-width: 320px){
+@media screen and (max-width: 320px) {
   .input-palindrom {
     width: 90vw;
   }
