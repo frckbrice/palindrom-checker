@@ -55,7 +55,7 @@ body {
 .btn-check {
   width: 120px;
   font-size: 3vh;
-  padding: 15px 24px;
+  padding: 10px 24px;
   border-radius: 10px;
   margin: 7%;
 }
@@ -82,7 +82,7 @@ body {
   }
 
   .btn-check {
-    padding: 12px 20px;
+    padding: 10px 20px;
   }
 }
 
