@@ -20,6 +20,13 @@ body {
   font-family: "Secular One", sans-serif;
 }
 
+h1 {
+  position: absolute;
+  top: 10vh;
+  font-family: 'Shadows Into Light', sans-serif;
+  color: aliceblue;
+}
+
 #main-container {
   background: url("../images/bg.jpg");
   display: flex;
@@ -31,11 +38,12 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
+  padding: 20px;
 }
 
 .container {
   position: absolute;
-  top: 20vh;
+  top: 30vh;
   color: aliceblue;
   text-align: center;
 }
@@ -43,6 +51,8 @@ body {
 .label-for-text {
   font-size: 3.5vh;
   font-family: "Secular One", sans-serif;
+  background-image: linear-gradient(to right, var(--pink), var(--purple));
+  padding: 0 20px;
 }
 
 .input-palindrom {
