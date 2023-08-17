@@ -73,7 +73,7 @@ h1 {
 .display-result {
   border-radius: 10px;
   font-weight: bold;
-  background-image: linear-gradient(to right, var(--pink), var(--purple));
+  background-image: linear-gradient(to right, var(--light), var(--purple));
   -webkit-background-clip: text;
 
   background-clip: text;
