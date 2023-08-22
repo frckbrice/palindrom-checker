@@ -10,7 +10,7 @@
   --darkest: #111827;
   --gray: #687280;
   --light: #eee;
-  --light: #ffeded;
+  --smooke: #ffeded;
   --pink: #ec4899;
   --purple: #885cf6;
 }
@@ -74,12 +74,11 @@ h1 {
 .display-result {
   border-radius: 10px;
   font-weight: bold;
-  background-image: linear-gradient(to right, var(--light), var(--light));
-  -webkit-background-clip: text;
-
+  /* background-image: linear-gradient(to right, var(--light), var(--smooke));
+  -webkit-background-clip: text; */
+  color: #ffeded;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-
   margin-top: 5%;
 }
 
