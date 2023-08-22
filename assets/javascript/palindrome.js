@@ -1,8 +1,8 @@
 
-const btnCheck = document.querySelector('.btn-check');
+const btnCheck = document.querySelector('.btn-check')
 const display = document.querySelector('.display-result')
 
-btnCheck.addEventListener("click", Palindrome)
+btnCheck.addEventListener('click', Palindrome)
 
 function isPalindrome () {
 
@@ -62,4 +62,5 @@ const normalizedText = (chaine) => {
     }
   }
   return newArray.join('').toLowerCase()
+
 }
