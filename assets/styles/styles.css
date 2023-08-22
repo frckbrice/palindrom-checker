@@ -10,6 +10,7 @@
   --darkest: #111827;
   --gray: #687280;
   --light: #eee;
+  --smooke: #ffeded;
   --pink: #ec4899;
   --purple: #885cf6;
 }
@@ -18,6 +19,13 @@ body {
   width: 100vw;
   height: 100vh;
   font-family: "Secular One", sans-serif;
+}
+
+h1 {
+  position: absolute;
+  top: 10vh;
+  font-family: "Shadows Into Light", sans-serif;
+  color: aliceblue;
 }
 
 #main-container {
@@ -31,11 +39,12 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
+  padding: 20px;
 }
 
 .container {
   position: absolute;
-  top: 20vh;
+  top: 30vh;
   color: aliceblue;
   text-align: center;
 }
@@ -43,6 +52,8 @@ body {
 .label-for-text {
   font-size: 3.5vh;
   font-family: "Secular One", sans-serif;
+  background-image: linear-gradient(to right, var(--pink), var(--purple));
+  padding: 0 20px;
 }
 
 .input-palindrom {
@@ -55,38 +66,40 @@ body {
 .btn-check {
   width: 120px;
   font-size: 3vh;
-  padding: 15px 24px;
+  padding: 10px 24px;
   border-radius: 10px;
   margin: 7%;
 }
 
 .display-result {
-   border-radius: 10px;
+  border-radius: 10px;
   font-weight: bold;
-  background-image: linear-gradient(to right, var(--pink), var(--purple));
-  -webkit-background-clip: text; 
+
+  /* background-image: linear-gradient(to right, var(--light), var(--smooke));
+  -webkit-background-clip: text; */
+  color: #ffeded;
   background-clip: text;
-   -webkit-text-fill-color: transparent; 
-   margin-top: 30%;
+  -webkit-text-fill-color: transparent;
+  margin-top: 5%;
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
   .input-palindrom {
     width: 50vw;
   }
 }
 
-@media screen and (max-width: 425px){
+@media screen and (max-width: 425px) {
   .input-palindrom {
     width: 80vw;
   }
 
   .btn-check {
-    padding: 12px 20px;
+    padding: 10px 20px;
   }
 }
 
-@media screen and (max-width: 320px){
+@media screen and (max-width: 320px) {
   .input-palindrom {
     width: 90vw;
   }
