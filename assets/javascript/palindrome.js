@@ -1,66 +1,41 @@
+const btnCheck = document.querySelector(".btn-check");
 
-const btnCheck = document.querySelector('.btn-check')
-const display = document.querySelector('.display-result')
+btnCheck.addEventListener("click", Palindrome);
 
-btnCheck.addEventListener('click', Palindrome)
-
-function isPalindrome () {
-
-  const text = document.querySelector('.input-palindrom').value
-  const inputText = normalizedText(text)
-  const long = inputText.length
-  const n = Math.trunc(long / 2)
+function isPalindrome() {
+  const text = document.querySelector(".input-palindrom").value;
+  const inputText = normalizedText(text);
+  const long = inputText.length;
+  const n = Math.trunc(long / 2);
   for (let i = 0; i < n + 1; i++) {
+    console.log(i);
     if (inputText[i] !== inputText[long - 1 - i]) {
-      return `NO!   The chaine "${inputText}" is not a palindrom`
+      return `<span class="bad-result"> NO! The chaine "${inputText}" is not a palindrom</span>`;
     }
   }
-  return `YES!   The chaine "${inputText}" is a palindrom`
+  return `<span class="good-result">YES!   The chaine "${inputText}" is a palindrom</span>`;
 }
 
-function Palindrome (e) {
-  e.preventDefault()
-  display.innerHTML = isPalindrome()
-  document.querySelector('.input-palindrom').value = ''
+function Palindrome(e) {
+  e.preventDefault();
+  document.getElementById("display-result").innerHTML = isPalindrome();
+  document.querySelector(".input-palindrom").value = "";
 }
 
-//* function to remove special characters and space from input text
-// function to normalize a text
-
+//*function to normalize a text
+/**
+ *
+ * @param {string} chaine
+ * @returns a normalized string
+ */
 const normalizedText = (chaine) => {
-  const newArray = []
-  // Array for the differents punctuation mark that exist in english both US/UK
-  const listOfPunctuationMark = [
-    '.',
-    '?',
-    '!',
-    '-',
-    ',',
-    '{',
-    '}',
-    '[',
-    ']',
-    '...',
-    '&',
-    '@',
-    '/',
-    '*',
-    '(',
-    ')',
-    ':',
-    ';',
-    '”',
-    '“',
-    '–',
-    ' ',
-    '‘',
-    '’'
-  ]
-  for (const elem of chaine.split('')) {
-    if (listOfPunctuationMark.includes(elem) === 0) {
-      newArray.push(elem)
+  let newArray = [];
+  chaine = chaine.split("");
+
+  for (let elem of chaine) {
+    if (/\w/.test(elem)) {
+      newArray.push(elem);
     }
   }
-  return newArray.join('').toLowerCase()
-
-}
+  return newArray.join("").toLowerCase();
+};
