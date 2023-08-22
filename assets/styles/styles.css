@@ -10,6 +10,7 @@
   --darkest: #111827;
   --gray: #687280;
   --light: #eee;
+  --light: #ffeded;
   --pink: #ec4899;
   --purple: #885cf6;
 }
@@ -23,7 +24,7 @@ body {
 h1 {
   position: absolute;
   top: 10vh;
-  font-family: 'Shadows Into Light', sans-serif;
+  font-family: "Shadows Into Light", sans-serif;
   color: aliceblue;
 }
 
@@ -73,12 +74,12 @@ h1 {
 .display-result {
   border-radius: 10px;
   font-weight: bold;
-  background-image: linear-gradient(to right, var(--light), var(--purple));
+  background-image: linear-gradient(to right, var(--light), var(--light));
   -webkit-background-clip: text;
 
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  
+
   margin-top: 5%;
 }
 
