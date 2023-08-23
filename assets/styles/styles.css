@@ -64,7 +64,7 @@ h1 {
 
 #div-button {
   width: 70%;
-  border: 1px solid rgb(194, 188, 188);
+  border: 1px solid rgb(194 188 188);
   padding: 1rem;
 }
 
@@ -83,7 +83,6 @@ h1 {
   background-clip: text;
   margin-top: 5%;
   padding: 0.5rem 1rem;
-  color: #080808;
 }
 
 .bad-result,
