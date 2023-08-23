@@ -10,25 +10,28 @@
     />
     <title>Palindrom</title>
     <link rel="stylesheet" href="./assets/styles/styles.css" />
-    <script src="./palindrome.js" defer></script>
   </head>
   <body>
     <main id="main-container">
-      <div class="container">
-        <div>
+      <h1>PALINDROME CHECKER</h1>
+      <div id="container">
+        <div id="div-button">
           <label for="palindrom" class="label-for-text"
-            >Enter the word in the below field : </label
-          ><br />
+            >Enter the word</label
+          ><br>
           <input
             type="text"
             name="palindrom"
             class="input-palindrom"
             placeholder="Enter your word here"
-          /><br /><button class="btn-check">Check</button>
+          />
+          <br>
+          <button class="btn-check">Check</button>
         </div>
-         <div class="display-result"></div>
+        <div id="display-result"></div>
       </div>
-     
     </main>
+    <script src="./assets/javascript/palindrome.js"></script>
+
   </body>
 </html>

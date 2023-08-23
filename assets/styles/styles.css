@@ -10,7 +10,8 @@
   --darkest: #111827;
   --gray: #687280;
   --light: #eee;
-  --pink: #ec4899;
+  --smooke: #ffeded;
+  --pink: #783557;
   --purple: #885cf6;
 }
 
@@ -18,76 +19,92 @@ body {
   width: 100vw;
   height: 100vh;
   font-family: "Secular One", sans-serif;
-}
-
-#main-container {
-  background: url("../images/bg.jpg");
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 100%;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: relative;
+  color: #080808;
 }
 
-.container {
-  position: absolute;
-  top: 20vh;
+h1 {
+  text-align: center;
+  font-family: "Shadows Into Light", sans-serif;
+  color: rgb(15 15 16);
+  margin: 2rem auto;
+}
+
+#main-container {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+
+#container {
   color: aliceblue;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .label-for-text {
-  font-size: 3.5vh;
+  font-size: 1.5rem;
   font-family: "Secular One", sans-serif;
+  padding: 0 20px;
+  margin-bottom: 1.5rem;
 }
 
 .input-palindrom {
-  width: 350px;
+  width: 100%;
   height: 40px;
   font-size: 2.5vh;
-  margin: 7% 0;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+#div-button {
+  width: 70%;
+  border: 1px solid rgb(194 188 188);
+  padding: 1rem;
 }
 
 .btn-check {
   width: 120px;
-  font-size: 3vh;
-  padding: 15px 24px;
+  padding: 10px 24px;
   border-radius: 10px;
-  margin: 7%;
+  font-size: 1.25rem;
+  margin: 2rem;
 }
 
-.display-result {
-   border-radius: 10px;
+#display-result {
+  border-radius: 10px;
   font-weight: bold;
-  background-image: linear-gradient(to right, var(--pink), var(--purple));
-  -webkit-background-clip: text; 
+  color: black;
   background-clip: text;
-   -webkit-text-fill-color: transparent; 
-   margin-top: 30%;
+  margin-top: 5%;
+  padding: 0.5rem 1rem;
 }
 
-@media screen and (max-width: 768px){
-  .input-palindrom {
-    width: 50vw;
+.bad-result,
+.good-result {
+  font-size: 1.25rem;
+  color: #080808;
+}
+
+@media screen and (max-width: 768px) {
+  #div-button {
+    width: 100%;
   }
 }
 
-@media screen and (max-width: 425px){
-  .input-palindrom {
-    width: 80vw;
-  }
-
+@media screen and (max-width: 425px) {
   .btn-check {
-    padding: 12px 20px;
+    padding: 0.3rem 0.5rem;
   }
 }
 
-@media screen and (max-width: 320px){
-  .input-palindrom {
-    width: 90vw;
+@media screen and (max-width: 375px) {
+  .label-for-text {
+    font-size: 1.25rem;
   }
 }
