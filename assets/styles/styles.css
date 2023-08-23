@@ -27,7 +27,7 @@ body {
 h1 {
   text-align: center;
   font-family: "Shadows Into Light", sans-serif;
-  color: rgb(15, 15, 16);
+  color: rgb(15 15 16);
   margin: 2rem auto;
 }
 
@@ -80,18 +80,17 @@ h1 {
 #display-result {
   border-radius: 10px;
   font-weight: bold;
-
   background-image: linear-gradient(to right,var(--pink), var(--purple));
   -webkit-background-clip: text;
   background-clip: text;
-
   -webkit-text-fill-color: transparent;
   margin-top: 5%;
   padding: 0.5rem 1rem;
   color: #080808;
 }
 
-.bad-result, .good-result {
+.bad-result,
+.good-result {
   font-size: 1.25rem;
   color: #080808;
 }
@@ -103,7 +102,6 @@ h1 {
 }
 
 @media screen and (max-width: 425px) {
-
   .btn-check {
     padding: 0.3rem 0.5rem;
   }
