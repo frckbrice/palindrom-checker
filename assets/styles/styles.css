@@ -22,6 +22,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #080808;
 }
 
 h1 {
@@ -46,11 +47,9 @@ h1 {
   flex-direction: column;
 }
 
-
 .label-for-text {
   font-size: 1.5rem;
   font-family: "Secular One", sans-serif;
-  background-image: linear-gradient(to right, var(--pink), var(--purple));
   padding: 0 20px;
   margin-bottom: 1.5rem;
 }
@@ -80,10 +79,8 @@ h1 {
 #display-result {
   border-radius: 10px;
   font-weight: bold;
-  background-image: linear-gradient(to right,var(--pink), var(--purple));
-  -webkit-background-clip: text;
+  color: black;
   background-clip: text;
-  -webkit-text-fill-color: transparent;
   margin-top: 5%;
   padding: 0.5rem 1rem;
   color: #080808;
@@ -111,5 +108,4 @@ h1 {
   .label-for-text {
     font-size: 1.25rem;
   }
-
-} 
+}
